@@ -1,6 +1,8 @@
 # Quantum Game of Life Hamiltonian in PennyLane
 
-This repository contains a complete implementation of the Quantum Game of Life (QGoL) Hamiltonian using PennyLane, based on the paper by David Faux (2019) "The semi-quantum game of life" ([arXiv:1902.07835](https://arxiv.org/abs/1902.07835)).
+This repository contains a complete implementation in PennyLane of the Quantum Game of Life (QGoL) using a Hamiltonian. The appropriate Hamiltonian for the QGoL is a 🔄⛓️ "spin-chain" Hamiltonian that is engineered to simulate a ↔️ reversible cellular automaton rule, which mimics the complexity of Conway's Game of Life (GoL) over a continuous quantum evolution. 
+
+The key articles applying a Hamiltonian approach to the Quantum Game of Life (QGoL) and similar Quantum Cellular Automata (QCA) are [here](./docs/QGL-HAMILTONIAN-IMPLEMENTATION-LITERATURE.md).
 
 Another repo, [/roguetrainer/quantum-game-of-life-3x](https://github.com/roguetrainer/quantum-game-of-life-3x) contains a less sophisticated extension of the GoL, implemented in three different languages in a horse-race to compare their strenghts: Python, F# & Q#.
 
