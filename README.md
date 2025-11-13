@@ -21,6 +21,8 @@ Where:
 
 See also: more detail on [the Hamiltonian](./docs/QGL-HAMILTONIAN.md), which is a [spin-chain](https://en.wikipedia.org/wiki/Spin_chain) Hamiltonian that is engineered to simulate a reversible cellular automaton rule, which mimics the complexity of Conway's Game of Life (GoL) over a continuous quantum evolution.
 
+See [here](./docs/QGL-HAMILTONIAN-1D.md) for a conceptual Python implementation of the 1D case, using PennyLane. That simplified example uses a 1D chain with nearest-neighbour interaction. 
+
 ## Key Operator Mappings
 
 ### 1. State Flip Operator
