@@ -2,6 +2,11 @@
 
 This repository contains a complete implementation of the Quantum Game of Life (QGoL) Hamiltonian using PennyLane, based on the paper by David Faux (2019) "The semi-quantum game of life" ([arXiv:1902.07835](https://arxiv.org/abs/1902.07835)).
 
+Another repo, [/roguetrainer/quantum-game-of-life-3x](https://github.com/roguetrainer/quantum-game-of-life-3x) contains a less sophisticated extension of the GoL, implemented in three different languages in a horse-race to compare their strenghts: Python, F# & Q#.
+
+
+![QGL](./img/Q-CGL.png)
+
 ## Overview
 
 The Quantum Game of Life extends Conway's classic cellular automaton to the quantum realm, where cells exist in superposition states between alive (|1⟩) and dead (|0⟩). The system evolves under a Hamiltonian:
@@ -13,6 +18,8 @@ H = Σᵢ (bᵢ + bᵢ†) · (Nᵢ⁽²⁾ + Nᵢ⁽³⁾)
 Where:
 - **(bᵢ + bᵢ†)** is the state flip operator, mapped to Pauli X
 - **Nᵢ⁽ᵏ⁾** are neighbor counting projectors that equal 1 when site i has exactly k alive neighbors
+
+See also: more detail on [the Hamiltonian](./docs/QGL-HAMILTONIAN.md), which is a [spin-chain](https://en.wikipedia.org/wiki/Spin_chain) Hamiltonian that is engineered to simulate a reversible cellular automaton rule, which mimics the complexity of Conway's Game of Life (GoL) over a continuous quantum evolution.
 
 ## Key Operator Mappings
 
